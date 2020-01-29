@@ -36,3 +36,13 @@ Criar uma aplicação para armazenar projetos e suas tarefas utilizando [Express
 
 - Foi criado um middleware que recebe o `id` do projeto nos parâmetos da URL e verifica se aquele projeto que você quer criar já existe;
 - Foi criado tbm outromidlleware global que é chamado em todas as requisições e imprime (`console.log`) uma contagem de quantas requisições foram feitas na aplicação.
+
+## packages
+
+- nodemon (yarn add nodemon -D) Serve para atualizar sem precisar reiniciar o (node index.js), o mesmo atualiza uma vez que você o executa;
+- yarn init -y ( para iniciar um projeto NodeJs);
+
+## Software
+
+- Insomnia ( para testar as rotas, sabemos que o browser so mostra requisições `GET`, então para testarmos as demais utilizei o insomnia, mas para quem tem um sistema operacional de 32 bits, tem outro software: Postam(https://www.getpostman.com/)).
+
