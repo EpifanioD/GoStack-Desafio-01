@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-		Desafio GoStack 01
+		Desafio 01
 </h3>
 
 <p align="center">
