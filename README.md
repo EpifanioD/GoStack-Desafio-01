@@ -44,5 +44,5 @@ Criar uma aplicação para armazenar projetos e suas tarefas utilizando [Express
 
 ## Software
 
-- Insomnia: para testar as rotas, sabemos que o browser so mostra requisições `GET`, então para testarmos as demais utilizei o insomnia. Para quem tem um sistema operacional de 32 bits, existe outro software para que você possa fazer as mesmas requisições: [Postman](https://www.getpostman.com/)
+- Insomnia: para testar as rotas, sabemos que o browser só mostra requisições `GET`, então para testarmos as demais utilizei o insomnia. Para quem tem um sistema operacional de 32 bits, existe outro software para que você possa fazer as mesmas requisições: [Postman](https://www.getpostman.com/)
 
