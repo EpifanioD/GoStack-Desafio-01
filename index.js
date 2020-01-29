@@ -6,7 +6,7 @@ server.use(express.json());
 
 const projects = []
 
-function checkProjectExists(req, res, next) {
+function checarProjetos(req, res, next) {
     const { id } = req.params;
     const project = projects.find(p => p.id == id);
   
@@ -20,14 +20,14 @@ function checkProjectExists(req, res, next) {
   /**
    * Middleware que dá log no número de requisições
    */
-  function logRequests(req, res, next) {
+  function Requests(req, res, next) {
   
     console.count("Número de requisições");
   
     return next();
   }
   
-  server.use(logRequests);
+  server.use(Requests);
   
 server.post('/projects', (req, res) => {
     const { id, title } = req.body;
@@ -46,7 +46,7 @@ server.get('/projects', (req , res) => {
     return res.json(projects)
 })
 
-server.put('/projects/:id', checkProjectExists, (req, res)=>{
+server.put('/projects/:id', checarProjetos, (req, res)=>{
     const { id } = req.params;
     console.log(id)
     const { title } = req.body;
