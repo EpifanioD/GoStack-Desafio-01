@@ -6,6 +6,10 @@ server.use(express.json());
 
 const projects = []
 
+/*
+  Middleware que checa se existe algum project
+*/
+
 function checarProjetos(req, res, next) {
     const { id } = req.params;
     const project = projects.find(p => p.id == id);
@@ -17,9 +21,9 @@ function checarProjetos(req, res, next) {
     return next();
   }
   
-  /**
-   * Middleware que dá log no número de requisições
-   */
+  /*
+    Middleware que faz a contagem de requisições que foram feitas
+  */
   function Requests(req, res, next) {
   
     console.count("Número de requisições");
